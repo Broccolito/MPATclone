@@ -1,5 +1,3 @@
-This is a clone.
-
 # MPATclone: Multiple Phenotype Association Testing
 
 ## Overview
@@ -11,10 +9,7 @@ This is a clone.
 To install `MPAT`, you can use the following R command:
 
 ```
-R
-Copy code
-# Install from CRAN or GitHub repository (assuming it's available)
-install.packages("MPAT")
+devtools:install_github("Broccolito/MPATclone")
 ```
 
 ## Features
@@ -28,8 +23,6 @@ install.packages("MPAT")
 Below is an example demonstrating how to use `MPAT` to analyze genetic data:
 
 ```
-R
-Copy code
 library(MPAT)
 
 # Load example data
