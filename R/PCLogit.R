@@ -1,4 +1,4 @@
-PCFisher <-
+PCLogit <-
 function(Z.vec,Sigma)
 {
   eigen.res = eigen(Sigma)
@@ -10,7 +10,9 @@ function(Z.vec,Sigma)
   PC.vec = t(eigen.vec)%*%z.tmp
   PC.std = (PC.vec)^2/lambdas
   PC.p = pchisq(PC.std,df=1,lower.tail=FALSE)
-  PC.Fisher.stat = -2*sum(log(PC.p))
-  PC.Fisher.p = pchisq(PC.Fisher.stat,df=2*K,lower.tail = FALSE)
-  return(PC.Fisher.p)
+  
+  PC.Logit.stat = sum(log(PC.p/(1-PC.p)))
+  PC.Logit.stat.std = abs(PC.Logit.stat)*sqrt(3*(5*K+4)/(K*pi^2*(5*K+2)))
+  PC.Logit.p = 2*pt(PC.Logit.stat.std,df=5*K+4,lower.tail = FALSE)
+  return(PC.Logit.p)
 }

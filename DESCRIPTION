@@ -9,5 +9,4 @@ Description: Conduct multiple phenotype genetic association studies based on sum
 License: GPL (>= 2)
 NeedsCompilation: yes
 Imports: mvtnorm
-Packaged: 2016-10-19 19:45:20 UTC; zhonghualiu
-Built: R 4.3.0; aarch64-apple-darwin20; 2023-05-21 21:40:22 UTC; unix
+Packaged: 2015-11-24 20:31:28 UTC; ZhonghuaLiu
