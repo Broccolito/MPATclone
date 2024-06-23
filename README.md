@@ -1,6 +1,6 @@
 This is a clone.
 
-# MPAT: Multiple Phenotype Association Testing
+# MPATclone: Multiple Phenotype Association Testing
 
 ## Overview
 
