@@ -9,7 +9,7 @@
 To install `MPAT`, you can use the following R command:
 
 ```
-devtools:install_github("Broccolito/MPATclone")
+devtools::install_github("Broccolito/MPATclone")
 ```
 
 ## Features
